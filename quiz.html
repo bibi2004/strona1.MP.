@@ -1,0 +1,125 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Quiz</title>
+	
+</head>
+<body>
+<script>
+function spr(){
+
+
+var odpa = document.getElementById("odpa").checked;
+var odpb = document.getElementById("odpb").checked;
+var odpc = document.getElementById("odpc").checked;
+
+
+console.log(odpa,odpb,odpc);
+ if  (odpc == true) odp = "dobrze";
+	else odp = ".źle";
+	document.getElementById("wynik").innerHTML =
+"<br>" + odp;
+}
+
+
+</script>
+<script>
+function spr1(){
+
+
+var A = document.getElementById("A").checked;
+var B = document.getElementById("B").checked;
+var C = document.getElementById("C").checked;
+
+
+console.log(A,B,C);
+ if  (B == true) odp = "dobrze";
+	else odp = ".źle";
+	document.getElementById("wynik1").innerHTML =
+"<br>" + odp;
+}
+
+
+</script>
+
+<script>
+function spr4(){
+
+
+var A4 = document.getElementById("A4").checked;
+var B4 = document.getElementById("B4").checked;
+var C4 = document.getElementById("C4").checked;
+
+
+console.log(A4,B4,C4);
+ if  (A4 == true) odp = "dobrze";
+	else odp = ".źle";
+	document.getElementById("wynik4").innerHTML =
+"<br>" + odp;
+}
+
+
+
+
+
+
+
+
+
+</script>
+<div id="test">
+<h3>Ile stopni ma kąt prosty?</hr> <br>
+	<input type="radio" name="wybory"
+value="A" id="odpa"> 45°<br>
+	<input type="radio" name="wybory"
+value="B" id="odpb"> 88°<br>
+	<input type="radio" name="wybory"
+value="C" id="odpc"> 90°<br>
+<br>
+<button onclick="spr()">Sprawdź</button>
+<div id="wynik"></div>
+</div>
+
+
+
+
+
+
+
+<br>
+
+<div id="test">
+
+<h3>Czy kąty wierzchołkowe mają taką samą miare?</hr> <br>
+	<input type="radio" name="wybory"
+value="B" id="A">nie<br>
+	<input type="radio" name="wybory"
+value="C" id="B"> tak<br>
+	<input type="radio" name="wybory"
+value="A" id="C"> czasami mają ale nie zawsze<br>
+<br>
+<button onclick="spr1()">Sprawdź</button>
+<div id="wynik1"></div>
+</div>
+
+
+
+<div id="zadanie 4">
+
+<h3>Ile to jest 4+4*4</hr> <br>
+	<input type="radio" name="wybory"
+value="B4" id="A4">20<br>
+	<input type="radio" name="wybory"
+value="C4" id="B4"> 14<br>
+	<input type="radio" name="wybory"
+value="A4" id="C4"> 17<br>
+<br>
+<button onclick="spr4()">Sprawdź</button>
+<div id="wynik4"></div>
+</div>
+
+
+</body>
+
+</html>
